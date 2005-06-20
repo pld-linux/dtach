@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/Terminal
 Source0:	http://dl.sourceforge.net/dtach/%{name}-%{version}.tar.gz
 # Source0-md5:	9aa11433d5a5b4b9fed271f10102cf6f
+URL:		http://dtach.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,8 +36,8 @@ dzia³a najlepiej z aplikacjami pe³noekranowymi takimi jak emacs.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install %{name}		$RPM_BUILD_ROOT%{_bindir}
-install %{name}.1	$RPM_BUILD_ROOT%{_mandir}/man1
+install %{name}	$RPM_BUILD_ROOT%{_bindir}
+install %{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
