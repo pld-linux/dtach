@@ -1,5 +1,5 @@
 Summary:	A program that emulates the detach feature of screen
-Summary(pl):	Program emuluj±cy funkcjê detach ze screena
+Summary(pl.UTF-8):   Program emulujÄ…cy funkcjÄ™ detach ze screena
 Name:		dtach
 Version:	0.7
 Release:	1
@@ -17,12 +17,12 @@ avoids interpreting the input and output between attached terminals
 and the program under its control. Consequently, it works best with
 full-screen applications such as emacs.
 
-%description -l pl
-dtach to program emuluj±cy funkcjê detach ze screena z mniejszym
-narzutem. Zosta³ zaprojektowany tak, by byæ przezroczysty i
-nieinwazyjny; zapobiega interpretowaniu wej¶cia i wyj¶cia pomiêdzy
-pod³±czonymi terminalami a kontrolowanym programem. Konsekwentnie,
-dzia³a najlepiej z aplikacjami pe³noekranowymi takimi jak emacs.
+%description -l pl.UTF-8
+dtach to program emulujÄ…cy funkcjÄ™ detach ze screena z mniejszym
+narzutem. ZostaÅ‚ zaprojektowany tak, by byÄ‡ przezroczysty i
+nieinwazyjny; zapobiega interpretowaniu wejÅ›cia i wyjÅ›cia pomiÄ™dzy
+podÅ‚Ä…czonymi terminalami a kontrolowanym programem. Konsekwentnie,
+dziaÅ‚a najlepiej z aplikacjami peÅ‚noekranowymi takimi jak emacs.
 
 %prep
 %setup -q
