@@ -1,12 +1,12 @@
 Summary:	A program that emulates the detach feature of screen
 Summary(pl.UTF-8):	Program emulujący funkcję detach ze screena
 Name:		dtach
-Version:	0.7
+Version:	0.8
 Release:	1
 License:	GPL
 Group:		Applications/Terminal
 Source0:	http://dl.sourceforge.net/dtach/%{name}-%{version}.tar.gz
-# Source0-md5:	9aa11433d5a5b4b9fed271f10102cf6f
+# Source0-md5:	ec5999f3b6bb67da19754fcb2e5221f3
 URL:		http://dtach.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
