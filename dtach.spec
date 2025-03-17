@@ -1,13 +1,13 @@
 Summary:	A program that emulates the detach feature of screen
 Summary(pl.UTF-8):	Program emulujący funkcję detach ze screena
 Name:		dtach
-Version:	0.8
-Release:	2
+Version:	0.9
+Release:	1
 License:	GPL
 Group:		Applications/Terminal
-Source0:	http://dl.sourceforge.net/dtach/%{name}-%{version}.tar.gz
-# Source0-md5:	ec5999f3b6bb67da19754fcb2e5221f3
-URL:		http://dtach.sourceforge.net/
+Source0:	https://downloads.sourceforge.net/dtach/%{name}-%{version}.tar.gz
+# Source0-md5:	6dac9c0f96d7d55ea56c01504b23faf6
+URL:		https://dtach.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 install %{name}	$RPM_BUILD_ROOT%{_bindir}
-install %{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
+cp -p %{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -45,5 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man1/*
+%attr(755,root,root) %{_bindir}/dtach
+%{_mandir}/man1/dtach.1*
